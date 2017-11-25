@@ -1,0 +1,36 @@
+#include "DigiKeyboard.h"
+
+void setup() {
+  DigiKeyboard.sendKeyStroke(0);
+  DigiKeyboard.sendKeyStroke(0,MOD_GUI_LEFT);
+  DigiKeyboard.delay(2000);
+  DigiKeyboard.print("cmd");
+  DigiKeyboard.delay(2000);
+  DigiKeyboard.sendKeyStroke(KEY_ENTER , MOD_CONTROL_LEFT | MOD_SHIFT_LEFT);
+  DigiKeyboard.delay(2000);
+  DigiKeyboard.sendKeyStroke(KEY_ARROW_LEFT);
+  DigiKeyboard.delay(1500);
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.delay(1500);
+  DigiKeyboard.print("cd ..");
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.delay(1500);
+  DigiKeyboard.print("cd ..");
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.delay(1500);
+  DigiKeyboard.print("cd ..");
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.delay(1500); 
+  DigiKeyboard.print("mkdir H4cXc3H");
+  //Replace H4cXc3H with Your Directory Name
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.delay(1500);
+  DigiKeyboard.print("exit");
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+}
+
+
+void loop() {
+
+  
+}
